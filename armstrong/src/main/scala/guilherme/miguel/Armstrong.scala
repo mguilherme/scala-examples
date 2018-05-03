@@ -15,9 +15,9 @@ class Armstrong {
     */
   def isArmstrong(number: Int): Boolean = {
 
-    val strNumber = number.toString
+    val string = number.toString
 
-    number == strNumber.map(_.asDigit).toList.map(math.pow(_, strNumber.length)).sum
+    number == string.map(n => math.pow(n.asDigit, string.length)).sum
   }
 
 }
