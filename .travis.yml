@@ -6,4 +6,4 @@ scala:
   - 2.12.6
 
 script:
-  - sh -c 'cd fizz-buzz sbt ++$TRAVIS_SCALA_VERSION test'
+  - sbt ++$TRAVIS_SCALA_VERSION test
