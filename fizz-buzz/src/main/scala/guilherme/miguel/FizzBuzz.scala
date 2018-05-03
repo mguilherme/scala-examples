@@ -15,7 +15,7 @@ class FizzBuzz {
     * @param n the number
     * @return <b>fizz</b>, <b>buzz</b>, <b>fizzbuzz</b> or the number itself
     */
-  def number(n: Int) = (n % 3, n % 5) match {
+  def number(n: Int): String = (n % 3, n % 5) match {
     case (0, 0) => "fizzbuzz"
     case (0, _) => "fizz"
     case (_, 0) => "buzz"
@@ -30,6 +30,6 @@ class FizzBuzz {
     * @return a string with the multiples of 3, 5 or 15
     *         replaced with <b>fizz</b>, <b>buzz</b>, <b>fizzbuzz</b> or the number itself
     */
-  def range(start: Int, end: Int) = (start to end).map(number).mkString(" ")
+  def range(start: Int, end: Int): String = (start to end).map(number).mkString(" ")
 
 }

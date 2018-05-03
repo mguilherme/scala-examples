@@ -11,7 +11,7 @@ class FizzBuzzTest extends FlatSpec with Matchers with BeforeAndAfterEach {
 
   var fizzBuzz: FizzBuzz = _
 
-  override protected def beforeEach() = fizzBuzz = new FizzBuzz
+  override protected def beforeEach(): Unit = fizzBuzz = new FizzBuzz
 
   behavior of "FizzBuzz"
 
