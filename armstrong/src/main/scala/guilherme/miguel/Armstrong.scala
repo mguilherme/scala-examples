@@ -17,7 +17,7 @@ class Armstrong {
 
     val string = number.toString
 
-    number == string.map(n => math.pow(n.asDigit, string.length)).sum
+    number == string.map(_.asDigit).map(math.pow(_, string.length)).sum
   }
 
 }
