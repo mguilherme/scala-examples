@@ -25,8 +25,6 @@ class Fibonacci {
     * @param operation the operation
     * @return A comma separated String
     */
-  def range(range: Range, operation: Int => Int): String = {
-    range.map(operation).map(_.toString).mkString(", ")
-  }
+  def range(range: Range, operation: Int => Int): String = range.map(operation).map(_.toString).mkString(", ")
 
 }
