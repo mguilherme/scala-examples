@@ -18,17 +18,7 @@ class FibonacciTest extends FlatSpec with Matchers with BeforeAndAfterEach {
   behavior of "Fibonacci"
 
   it should "retrieve the expected string output" in {
-    range(fibonacci.fibonacci) shouldBe Expected
+    fibonacci.range(0 until 15, fibonacci.fibonacci) shouldBe Expected
   }
-
-  /**
-    * Retrieves a String with numbers from 0 to 14 for a given operation.
-    * @param operation the operation
-    * @return A comma separated String
-    */
-  def range(operation: Int => Int): String = {
-    (0 until 15).map(operation).map(_.toString).mkString(", ")
-  }
-
 
 }
