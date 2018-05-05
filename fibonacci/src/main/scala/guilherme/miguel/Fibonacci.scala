@@ -29,10 +29,10 @@ class Fibonacci {
   def fibonacciTailRecursive(n: Int): Int = {
 
     @tailrec
-    def tailHelper(n: Int, prev: Int = 0, next: Int = 1): Int = n match {
+    def tailHelper(n: Int, prev: Int = 0, current: Int = 1): Int = n match {
       case 0 => prev
-      case 1 => next
-      case _ => tailHelper(n - 1, next, next + prev)
+      case 1 => current
+      case _ => tailHelper(n - 1, current, prev + current)
     }
 
     tailHelper(n)
