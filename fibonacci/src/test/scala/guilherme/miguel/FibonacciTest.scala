@@ -21,4 +21,8 @@ class FibonacciTest extends FlatSpec with Matchers with BeforeAndAfterEach {
     fibonacci.range(0 until 15, fibonacci.fibonacci) shouldBe Expected
   }
 
+  it should "retrieve the expected string output for tail recursion" in {
+    fibonacci.range(0 until 15, fibonacci.fibonacciTailRecursive) shouldBe Expected
+  }
+
 }
