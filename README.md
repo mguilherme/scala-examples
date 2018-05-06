@@ -3,3 +3,4 @@
 * [Armstrong](armstrong)
 * [Fibonacci](fibonacci)
 * [FizzBuzz](fizz-buzz)
+* [Password verifier](password-verifier)
